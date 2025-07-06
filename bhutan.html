@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+   <link rel = "stylesheet" href = "font/fonts.css">
+
+
+    <link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="style1.css" />
+        <link rel = "stylesheet" href = "css/normalize.css">
+        <!-- custom css -->
+        <link rel = "stylesheet" href = "css/utility.css">
+
+<link href="fontawesome.min.css" rel="stylesheet" />
+     <link rel="stylesheet" href="aos.css" />
+<link rel = "stylesheet" href = "css/css/style.css">
+  <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour & Travel | Digdarshan</title>
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+ 
+ <link rel="stylesheet" href="assets/assets/assets/css/style.css" />
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<style>
+
+
+
+
+
+
+.slider{
+  display:flex;  
+  flex-wrap:wrap;
+  width:100%;
+  justify-content:center;
+  align-items:center;
+  background-image:linear-gradient(95deg, #fea764d1, 
+              rgb(0 0 0 / 77%)), url(chiranjit_pic/bhutan/cho-oyu-expedition-small.jpg);
+ background-repeat:no-repeat;    
+  background-size: cover;
+  background-position:center;  
+}
+
+.letfcont, .rightimg{
+  width:50%;
+}
+.letfcont{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+}
+span{
+  text-align:center;
+}
+.listcard{
+  display:flex;
+  justify-content:center;
+  align-itmes:center;
+  margin:30px 0px;
+}
+.card{
+  position:relative;
+  width:189px;  
+  height:210px;
+  margin:8px;
+  display:flex;  
+  overflow:hidden;
+  border-radius:20px;
+}
+img{
+  width:100%;  
+  object-fit:cover;
+  border-radius:20px;
+  transition:.6s ease-in-out;  
+}
+.card:hover img{
+  transform: scale(1.4); 
+  border-radius:5px;
+  transition:.3s ease;
+   border-radius:20px;  
+}
+.card:hover {
+  box-shadow: 1px 0px 12px #000;
+  transition:.1s ease;
+}
+h1{
+  color:#fff;
+  font-size:30px;
+}
+.tw{
+  color:#fff;
+}
+.desc{
+  position: absolute;
+  top: 0;  
+  left: 0;
+  height: 100%;
+  width: 100%;
+  font-size:19px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:#fff;
+  border-radius:20px;
+}
+.flight {
+   background:linear-gradient(45deg, #00ff, transparent);
+}
+.bus{
+  background:linear-gradient(45deg, #ff0000, transparent);
+}
+.hotel{
+   background:linear-gradient(45deg, #090000, transparent);
+}
+.recharge{
+  background:linear-gradient(45deg, #eb0988, transparent);
+}
+.movan{
+   animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.movans{
+   animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@media(max-width:768px){
+  .slider {
+    flex-direction:column;
+    text-align:center;
+  }
+  .listcard{
+    flex-direction:column;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ### CONTACT PAGE ### */
+/* contact */
+.contact-form .form-control{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #000;
+    display: block;
+    margin: 1.6rem auto;
+}
+.contact-form .btn{
+    display: block;
+    margin: auto;
+}
+.contact-icon{
+    background-color: #5d6af1;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 1rem auto;
+    font-size: 2rem;
+}
+.contact-item{
+    text-align: center;
+    margin: 3rem 0;
+}
+.contact-item div span{
+    font-weight: 600;
+    font-family: "Ralway", sans-serif;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+#myBtn {
+display: none; /* Hidden by default */
+position: fixed; /* Fixed/sticky position */
+bottom: 20px; /* Place the button at the bottom of the page */
+right: 30px; /* Place the button 30px from the right */
+z-index: 99; /* Make sure it does not overlap */
+border: none; /* Remove borders */
+outline: none; /* Remove outline */
+background-color: red; /* Set a background color */
+color: white; /* Text color */
+cursor: pointer; /* Add a mouse pointer on hover */
+padding: 15px; /* Some padding */
+border-radius: 10px; /* Rounded corners */
+font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+
+
+
+
+
+
+.parallax {
+  background: url("chiranjit_pic/bhutan/Bhutan-Punakha-Dzong-Sunset-1326288165-Website-1920x1080-fill-gravityauto.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.nav {
+    width:  100%;
+    height: 65px;
+   
+    line-height: 65px;
+    text-align: center;
+}
+
+.nav div.logo {
+    float: left;
+    width: auto;
+    height: auto;
+    padding-left: 3rem;
+}
+
+.nav div.logo a {
+    text-decoration: none;
+    color: #000;
+    font-size: 2.5rem;
+}
+
+.nav div.main_list {
+    height: 65px;
+    float: right;
+
+}
+
+.nav div.main_list ul {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav div.main_list ul li {
+    width: auto;
+    height: 65px;
+    padding: 0;
+    padding-right: 3rem;
+}
+
+.nav div.main_list ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 65px;
+    font-size: 1.4rem;
+}
+
+.nav div.main_list ul li a:hover {
+    color: #00E676;
+}
+
+
+/* Home section */
+
+.navTrigger {
+    display: none;
+    color: #000;
+}
+
+.nav {
+    
+    padding-bottom: 20px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    
+
+}
+
+
+/* Media qurey section */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+
+
+
+    .container {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+.nav {
+    padding-top: 1px;
+    padding-bottom: 20px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    background-color: #502299;
+    color: #fff;
+}
+
+.nav div.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+    .navTrigger {
+        display: block;
+
+    }
+    .nav div.logo {
+        margin-left: 15px;
+        color: #fff;
+
+    }
+
+    .a{
+
+
+    	color: #fff;
+    }
+    .nav div.main_list {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .nav div.show_list {
+        height: auto;
+        display: none;
+    }
+    .nav div.main_list ul {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        right: 50;
+        left: 0;
+        bottom: 0;
+        background-color: #502299;
+        /*same background color of navbar*/
+    
+    }
+    .nav div.main_list ul li {
+        width: 100%;
+        text-align: center;
+    }
+    .nav div.main_list ul li a {
+        
+        width: 100%;
+        font-size: 1.8rem;
+       
+        align-items: center;
+    }
+    .nav div.media_button {
+        display: block;
+    }
+}
+
+
+/* Animation */
+/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
+
+.navTrigger {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    margin: auto;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+}
+
+.navTrigger i {
+    background-color: #000;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+}
+
+.navTrigger i:nth-child(1) {
+    -webkit-animation: outT 0.8s backwards;
+    animation: outT 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(2) {
+    margin: 5px 0;
+    -webkit-animation: outM 0.8s backwards;
+    animation: outM 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(3) {
+    -webkit-animation: outBtm 0.8s backwards;
+    animation: outBtm 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger.active i:nth-child(1) {
+    -webkit-animation: inT 0.8s forwards;
+    animation: inT 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(2) {
+    -webkit-animation: inM 0.8s forwards;
+    animation: inM 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(3) {
+    -webkit-animation: inBtm 0.8s forwards;
+    animation: inBtm 0.8s forwards;
+}
+
+@-webkit-keyframes inM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes inM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes outM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes outM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes inT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes inT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes outT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes inBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes inBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes outBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+.affix {
+    padding: 0;
+    background-color: #111;
+}
+
+
+
+
+
+
+.myH2 {
+	text-align:center;
+	font-size: 4rem;
+}
+.myP {
+	text-align: justify;
+	padding-left:15%;
+	padding-right:15%;
+	font-size: 20px;
+}
+@media all and (max-width:700px){
+	.myP {
+		padding:2%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#banner {
+  width: 100%;
+  height: 500px;
+  padding-top: 60px;
+  background-image: url(chiranjit_pic/bhutan/R.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: table;
+  color: #666;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+}
+
+.headline {
+  padding-top: 30px;
+}
+
+.headline h2 {
+  font-size: 50px;
+  padding-top: 60px;
+}
+
+div#banner.smaller {
+  opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card-img-top {
+  width: 100%;
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  max-width: 1200px;
+  width: 95%;
+}
+.slider-wrapper {
+  position: relative;
+}
+.slider-wrapper .slide-button {
+  position: absolute;
+  top: 50%;
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 50px;
+  z-index: 5;
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+  font-size: 2.2rem;
+  background: #000;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.slider-wrapper .slide-button:hover {
+  background: #404040;
+}
+.slider-wrapper .slide-button#prev-slide {
+  left: -25px;
+  display: none;
+}
+.slider-wrapper .slide-button#next-slide {
+  right: -25px;
+}
+.slider-wrapper .image-list {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 18px;
+  font-size: 0;
+  list-style: none;
+  margin-bottom: 30px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.slider-wrapper .image-list::-webkit-scrollbar {
+  display: none;
+}
+.slider-wrapper .image-list .image-item {
+  width: 325px;
+  height: 400px;
+  object-fit: cover;
+}
+.container .slider-scrollbar {
+  height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.slider-scrollbar .scrollbar-track {
+  background: #ccc;
+  width: 100%;
+  height: 2px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  position: relative;
+}
+.slider-scrollbar:hover .scrollbar-track {
+  height: 4px;
+}
+.slider-scrollbar .scrollbar-thumb {
+  position: absolute;
+  background: #000;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  cursor: grab;
+  border-radius: inherit;
+}
+.slider-scrollbar .scrollbar-thumb:active {
+  cursor: grabbing;
+  height: 8px;
+  top: -2px;
+}
+.slider-scrollbar .scrollbar-thumb::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  bottom: -10px;
+}
+/* Styles for mobile and tablets */
+@media only screen and (max-width: 1023px) {
+  .slider-wrapper .slide-button {
+    display: none !important;
+  }
+  .slider-wrapper .image-list {
+    gap: 10px;
+    margin-bottom: 15px;
+    scroll-snap-type: x mandatory;
+  }
+  .slider-wrapper .image-list .image-item {
+    width: 280px;
+    height: 380px;
+  }
+  .slider-scrollbar .scrollbar-thumb {
+    width: 20%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+</style>
+<body>
+
+      <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                
+                  <a class="logo" style="font-size: 20px;"><img src="c008a6dd-6ac7-49c0-9554-c33ef7deacab-removebg-preview.png" style="height:60px"></a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="index.html#home" style="color:#000">HOME</a></li>
+                    <li><a href="index.html#about" style="color:#000">PACKAGE</a></li>
+                    <li><a href="index.html#tour" style="color:#000">TOUR</a></li>
+                    <li><a href="index.html#package" style="color:#000">ABOUT</a></li>
+                    <li><a href="index.html#contact" style="color:#000">CONTACT</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger" style="color:#000">
+                <i style="color:#000"></i>
+                <i style="color:#000"></i>
+                <i style="color:#000"></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home">
+    </section>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="clearfix"></div>
+  <div id="banner" class="center">
+    <div class="headline">
+ 
+      <p style="text-align: center;font-size: 50px; padding-top: 130px; color: ;">BHUTAN</p>
+    </div>
+  </div>
+
+
+<br><br><br>
+
+
+    <h4 style="text-align:center; color: #000;">VISITING PLACES</h4>
+<div class="container"  >
+   <div class="slider ">  
+      <div class="letfcont ">
+        <h1>Welcome to DIGDARSHAN</h1>
+        <span class="tw">Bhutan Visiting Place</span>
+
+        <span class="tw">TOUR STARTING DATE: ALL THE TIME</span>
+        
+     </div>
+     <div class="rightimg">
+       <div class="listcard movan" style="visibility: visible; animation-name: fadeInAnimation;">
+           <div class="card ">
+             <img src="chiranjit_pic/bhutan/definitive-cultural-tour-of-bhutan-chortens-at-dochu-la-b-stallion.jpg"/ style="height:100%">      
+                       <div class="desc flight">
+             <h1>THIMPU</h1>
+             <span>3 Night</span>
+             </div>
+           </div> 
+           <div class="card ">
+              <img src="chiranjit_pic/bhutan/cho-oyu-expedition-small.jpg"/style="height:100%">
+             <div class="desc bus">
+             <h1>PARO</h1>
+             <span>2 Night</span>
+             </div>
+           </div> 
+             
+       </div>
+           <div class="listcard movans" style="visibility: visible; animation-name: fadeInAnimation;">
+           <div class="card">
+             <img src="chiranjit_pic/bhutan/92cd5d269a22770b7041ca5df4eb8544.jpeg"/ style="height:100%">
+             <div class="desc hotel">
+             <h1>PHUENTSHOLING</h1>
+             <span>1 Night</span>
+             </div>
+           </div> 
+       </div>
+         
+     </div>
+  </div>
+  
+</div>
+<br>
+<h4 style="text-align:center; color: #000;">OUR BHUTAN GALLARY</h4><br>
+    <div class="container">
+      <div class="slider-wrapper">
+        <button id="prev-slide" class="slide-button material-symbols-rounded">
+          chevron_left
+        </button>
+        <ul class="image-list">
+          <img class="image-item" src="chiranjit_pic/bhutan/92cd5d269a22770b7041ca5df4eb8544.jpeg" alt="img-1" />
+            <img class="image-item" src="chiranjit_pic/bhutan/1478945.jpg" alt="img-1" />
+                 <img class="image-item" src="chiranjit_pic/bhutan/1479142.jpg" alt="img-1" />
+                      <img class="image-item" src="chiranjit_pic/bhutan/Bhutan-Punakha-Dzong-Sunset-1326288165-Website-1920x1080-fill-gravityauto.jpg" alt="img-1" />
+                           <img class="image-item" src="chiranjit_pic/bhutan/cho-oyu-expedition-small.jpg" alt="img-1" />
+                                <img class="image-item" src="chiranjit_pic/bhutan/definitive-cultural-tour-of-bhutan-chortens-at-dochu-la-b-stallion.jpg" alt="img-1" />
+                                     <img class="image-item" src="chiranjit_pic/bhutan/OIP.jpg" alt="img-1" />
+                                          <img class="image-item" src="chiranjit_pic/bhutan/white-bellied-musk-deer.jpeg" alt="img-1" />
+
+        </ul>
+        <button id="next-slide" class="slide-button material-symbols-rounded">
+          chevron_right
+        </button>
+      </div>
+      <div class="slider-scrollbar">
+        <div class="scrollbar-track">
+          <div class="scrollbar-thumb"></div>
+        </div>
+      </div>
+    </div>
+  
+
+
+
+<!-- Discuss project section start -->
+    <section class="dicscuss_projects parallax">
+      <div class="pt-120 pb-120">
+        <div class="row">
+          <div class="col-xl-6"></div>
+          <div class="col-xl-6">
+            <div class="d-flex align-items-center justify-content-center px-5">
+              <div class="dicscuss-content">
+                <span class="fs-ten fw-semibold p2-color mb-2"
+                  >Our mission is to inspire and facilitate your adventures</span
+                >
+                <h2 class="fs-two fw-semibold p6-color mb-3 mb-lg-6">
+                  Let's Discuss your Tour
+                </h2>
+                <p class="fs-ten p6-color">
+                 At DIGDARSHAN, we provide expertly curated destinations and personalized itineraries, ensuring that every trip is tailored to your unique preferences. 
+                </p>
+                <div
+                  class="mt-5 mt-lg-10 d-flex flex-wrap gap-4 gap-lg-8 d-flex align-items-center"
+                >
+                <a href="index.html#contact"  class="btn p6-color">
+                    <span class="btn-text-one">Get Quotes</span>
+                    <span class="btn-text-two">Get Quotes</span>
+                  </a>
+               
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Discuss project section end -->
+
+
+
+
+
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+
+
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3570.768406374622!2d89.52453197466679!3d26.495400676898406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e25715dde3f289%3A0x7c2620e47648df1!2sDigdarshan%20Tours%20%26%20Travels%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1749924032278!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+ <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-3">
+            <h6>DIGDARSHAN</h6>
+            <p class="text">    Explore the world with ease and excitement through our comprehensive
+            travel platform. Your journey begins here, where seamless planning
+            meets unforgettable experiences.Customized holiday packages to suit every budget.Explore the world with us – your trusted travel partner.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="index.html#home" style="color: #fff;">HOME</a></li>
+        <li><a href="index.html#about" style="color: #fff;">PACKAGE</a></li>
+        <li><a href="index.html#tour" style="color: #fff;">TOUR</a></li>
+        <li><a href="index.html#package" style="color: #fff;">ABOUT</a></li>
+        <li><a href="index.html#contact" style="color: #fff;">CONTACT</a></li>
+        
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+           
+              <li><a href="dubai.html"style="color:#ffffff">DUBAI</a></li>
+              <li><a href="thailand.html"style="color:#ffffff">THAILAND</a></li>
+              <li><a href="vietnam.html"style="color:#ffffff">VIETNAM</a></li>
+        
+             <li><a href="london.html"style="color:#ffffff">LONDON</a></li>
+              <li><a href="rajasthan.html"style="color:#ffffff"> RAJASTHAN</a></li>
+              <li><a href="kerala.html"style="color:#ffffff"> KERALA</a></li>
+              <li><a href="himachal.html"style="color:#ffffff"> HIMACHAL</a></li>
+              <li><a href="haridwar.html"style="color:#ffffff"> HARIDWAR</a></li>
+              <li><a href="arunachal.html"style="color:#ffffff"> ARUNACHAL</a></li>
+              <li><a href="andaman.html"style="color:#ffffff"> ANDAMAN</a></li>
+              <li><a href="gujrat.html"style="color:#ffffff">  GUJRAT</a></li>
+              <li><a href="kashmir.html"style="color:#ffffff">KASHMIR</a></li>
+              <li><a href="nepal.html"style="color:#ffffff">NEPAL</a></li>
+            <li><a href="bhutan.html"style="color:#ffffff"> BHUTAN</a></li>
+                <li><a href="mumbai.html"style="color:#ffffff"> MUMBAI</a></li>
+            </ul>
+
+          </div>
+
+
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <div class = "contact-right my-2">
+                        <div class = "contact-item">
+                            <span class = "contact-icon flex">
+                                <i class = "fa fa-phone-alt"></i>
+                            </span>
+                            <div>
+                                <span>Phone</span>
+                                <p class = "text" style="color:#ffffff">+91 9434103834<br>+91 8372095133<br>+91 7001179067</p>
+                            </div>
+                        </div>
+                        <div class = "contact-item">
+                            <span class = "contact-icon flex">
+                                <i class = "fa fa-map-marked-alt"></i>
+                            </span>
+                            <div>
+                                <span>Address</span>
+                                <p class = "text" style="color:#ffffff">New Town Madhab More, Alipurduar</p>
+                            </div>
+                        </div>
+                        <div class = "contact-item">
+                            <span class = "contact-icon flex">
+                                <i class = "fa fa-envelope"></i>
+                            </span>
+                            <div>
+                                <span>E-mail</span>
+                                <p class = "text" style="color:#ffffff">digdarshan.app@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+          </div>
+           <ul class="footer__socials">
+            <li>
+              <a href="https://www.facebook.com/people/Digdarshan-Tour/61557550703531/?rdid=iFYy15F3NTBdDSi1&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1EtRTPSWwE%2F" style="color: #fff;"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/digdarshan_tourandtravels?igsh=Mm9qZDF6NHZ1d2Q4"style="color: #fff;"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="#"style="color: #fff;"><i class="ri-youtube-line"></i></a>
+            </li>
+          </ul>
+        </div>
+        <hr>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2025 All Rights Reserved by 
+         <a href="#">Digdarshan</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+           
+
+ 
+
+          </div>
+        </div>
+      </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Jquery needed -->
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+    $('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+
+});
+
+    </script>
+
+
+
+    <script>// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+mybutton.style.display = "block";
+} else {
+mybutton.style.display = "none";
+}
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+document.body.scrollTop = 0; // For Safari
+document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+}</script>
+
+</body>
+
+
+<script>
+$(window).on('scroll', function(e) {
+
+  if ($(window).scrollTop() > 300) {
+    $("header").addClass("smaller");
+  } else {
+    if ($("header").hasClass("smaller")) {
+      $("header").removeClass("smaller");
+    }
+  }
+  
+});
+
+$(window).on('scroll', function(e) {
+ if ($(window).scrollTop() > 300) {
+    $("#banner").addClass("smaller");
+  } else {
+    if ($("#banner").hasClass("smaller")) {
+      $("#banner").removeClass("smaller");
+    }
+  }
+});
+</script>
+
+
+<script>const initSlider = () => {
+    const imageList = document.querySelector(".slider-wrapper .image-list");
+    const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
+    const sliderScrollbar = document.querySelector(".container .slider-scrollbar");
+    const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
+    const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
+    
+    // Handle scrollbar thumb drag
+    scrollbarThumb.addEventListener("mousedown", (e) => {
+        const startX = e.clientX;
+        const thumbPosition = scrollbarThumb.offsetLeft;
+        const maxThumbPosition = sliderScrollbar.getBoundingClientRect().width - scrollbarThumb.offsetWidth;
+        
+        // Update thumb position on mouse move
+        const handleMouseMove = (e) => {
+            const deltaX = e.clientX - startX;
+            const newThumbPosition = thumbPosition + deltaX;
+            // Ensure the scrollbar thumb stays within bounds
+            const boundedPosition = Math.max(0, Math.min(maxThumbPosition, newThumbPosition));
+            const scrollPosition = (boundedPosition / maxThumbPosition) * maxScrollLeft;
+            
+            scrollbarThumb.style.left = `${boundedPosition}px`;
+            imageList.scrollLeft = scrollPosition;
+        }
+        // Remove event listeners on mouse up
+        const handleMouseUp = () => {
+            document.removeEventListener("mousemove", handleMouseMove);
+            document.removeEventListener("mouseup", handleMouseUp);
+        }
+        // Add event listeners for drag interaction
+        document.addEventListener("mousemove", handleMouseMove);
+        document.addEventListener("mouseup", handleMouseUp);
+    });
+    // Slide images according to the slide button clicks
+    slideButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const direction = button.id === "prev-slide" ? -1 : 1;
+            const scrollAmount = imageList.clientWidth * direction;
+            imageList.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        });
+    });
+     // Show or hide slide buttons based on scroll position
+    const handleSlideButtons = () => {
+        slideButtons[0].style.display = imageList.scrollLeft <= 0 ? "none" : "flex";
+        slideButtons[1].style.display = imageList.scrollLeft >= maxScrollLeft ? "none" : "flex";
+    }
+    // Update scrollbar thumb position based on image scroll
+    const updateScrollThumbPosition = () => {
+        const scrollPosition = imageList.scrollLeft;
+        const thumbPosition = (scrollPosition / maxScrollLeft) * (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
+        scrollbarThumb.style.left = `${thumbPosition}px`;
+    }
+    // Call these two functions when image list scrolls
+    imageList.addEventListener("scroll", () => {
+        updateScrollThumbPosition();
+        handleSlideButtons();
+    });
+}
+window.addEventListener("resize", initSlider);
+window.addEventListener("load", initSlider);</script>
+
+
+
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KL9C7XQPJP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KL9C7XQPJP');
+</script>    
+<!-- Google tag (gtag.js) this script for promote the code in google analytics-->
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M3N8GX9J');</script>
+<!-- End Google Tag Manager -->
+ <script type="application/ld+json">
+    {
+      "@context" : "https://schema.org",
+      "@type" : "WebSite",
+      "name" : "codingwithssr",
+      "url" : "https://codepen.io/codingwithssr/"
+    }
+  </script>  
+     <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "codingwithssr",
+      "image": "https://assets.codepen.io/301308/internal/avatars/users/default.png",
+      "url": "https://codepen.io/codingwithssr",
+      "sameAs": ["https://github.com/sivaraj47", "https://t.me/codingwithssr"],
+      "logo": "https://assets.codepen.io/301308/internal/avatars/users/default.png",
+      "name": "Codingwithssr",
+      "description": "Codingwithssr was started to learn simple code-sharing knowledge between one-to-one online learning",
+      "email": "codingwithssr@gmail.com",           
+      }
+     
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Product Banner Responsive Design",
+      "description": "The product banner responsive design is developed by html, css coding used to develop it and fully responsive design.",
+      "provider": {
+        "@type": "Organization",
+        "name": "make nature with code - codingwithssr",
+        "sameAs": ["https://github.com/sivaraj47", "https://t.me/codingwithssr","https://codepen.io/codingwithssr/pen/vYbgrBp"]
+      }
+    }
+    </script>
+  
+</html>

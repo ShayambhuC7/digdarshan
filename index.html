@@ -1,0 +1,2279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="css/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="style1.css" />
+        <link rel = "stylesheet" href = "css/normalize.css">
+        <!-- custom css -->
+        <link rel = "stylesheet" href = "css/utility.css">
+
+<link href="fontawesome.min.css" rel="stylesheet" />
+     <link rel="stylesheet" href="aos.css" />
+
+
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- fonts -->
+        <link rel = "stylesheet" href = "font/fonts.css">
+        
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <title>Tour & Travel | Digdarshan</title>
+  </head>
+
+  <style>
+
+
+
+
+/* ### CONTACT PAGE ### */
+/* contact */
+.contact-form .form-control{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #000;
+    display: block;
+    margin: 1.6rem auto;
+}
+.contact-form .btn{
+    display: block;
+    margin: auto;
+}
+.contact-icon{
+    background-color: #5d6af1;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 1rem auto;
+    font-size: 2rem;
+}
+.contact-item{
+    text-align: center;
+    margin: 3rem 0;
+}
+.contact-item div span{
+    font-weight: 600;
+    font-family: "Ralway", sans-serif;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav {
+    width:  100%;
+    height: 65px;
+   
+    line-height: 65px;
+    text-align: center;
+}
+
+.nav div.logo {
+    float: left;
+    width: auto;
+    height: auto;
+    padding-left: 3rem;
+}
+
+.nav div.logo a {
+    text-decoration: none;
+    color: #000;
+    font-size: 2.5rem;
+}
+
+.nav div.main_list {
+    height: 65px;
+    float: right;
+
+}
+
+.nav div.main_list ul {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav div.main_list ul li {
+    width: auto;
+    height: 65px;
+    padding: 0;
+    padding-right: 3rem;
+}
+
+.nav div.main_list ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 65px;
+    font-size: 1.4rem;
+}
+
+.nav div.main_list ul li a:hover {
+    color: #00E676;
+}
+
+
+/* Home section */
+
+.navTrigger {
+    display: none;
+    color: #000;
+}
+
+.nav {
+    
+    padding-bottom: 20px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    
+
+}
+
+
+/* Media qurey section */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+
+
+
+    .container {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+.nav {
+    padding-top: 1px;
+    padding-bottom: 20px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    background-color: #502299;
+    color: #fff;
+}
+
+.nav div.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+    .navTrigger {
+        display: block;
+
+    }
+    .nav div.logo {
+        margin-left: 15px;
+        color: #fff;
+
+    }
+
+    .a{
+
+
+      color: #fff;
+    }
+    .nav div.main_list {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .nav div.show_list {
+        height: auto;
+        display: none;
+    }
+    .nav div.main_list ul {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        right: 50;
+        left: 0;
+        bottom: 0;
+        background-color: #502299;
+        /*same background color of navbar*/
+    
+    }
+    .nav div.main_list ul li {
+        width: 100%;
+        text-align: center;
+    }
+    .nav div.main_list ul li a {
+        
+        width: 100%;
+        font-size: 1.8rem;
+       
+        align-items: center;
+    }
+    .nav div.media_button {
+        display: block;
+    }
+}
+
+
+/* Animation */
+/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
+
+.navTrigger {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    margin: auto;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+}
+
+.navTrigger i {
+    background-color: #000;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+}
+
+.navTrigger i:nth-child(1) {
+    -webkit-animation: outT 0.8s backwards;
+    animation: outT 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(2) {
+    margin: 5px 0;
+    -webkit-animation: outM 0.8s backwards;
+    animation: outM 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(3) {
+    -webkit-animation: outBtm 0.8s backwards;
+    animation: outBtm 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger.active i:nth-child(1) {
+    -webkit-animation: inT 0.8s forwards;
+    animation: inT 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(2) {
+    -webkit-animation: inM 0.8s forwards;
+    animation: inM 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(3) {
+    -webkit-animation: inBtm 0.8s forwards;
+    animation: inBtm 0.8s forwards;
+}
+
+@-webkit-keyframes inM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* video */
+.video-wrapper{
+    height: 500px;
+    position: relative;
+}
+.video-wrapper video{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+#play-btn{
+    position: absolute;
+    z-index: 5;
+    width: 70px;
+    height: 70px;
+   background-color: #ccc;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    padding-left: 0.4rem;
+    -webkit-transition: var(--trans);
+    -o-transition: var(--trans);
+    transition: var(--trans);
+}
+#play-btn:hover{
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#myBtn {
+display: none; /* Hidden by default */
+position: fixed; /* Fixed/sticky position */
+bottom: 20px; /* Place the button at the bottom of the page */
+right: 30px; /* Place the button 30px from the right */
+z-index: 99; /* Make sure it does not overlap */
+border: none; /* Remove borders */
+outline: none; /* Remove outline */
+background-color: red; /* Set a background color */
+color: white; /* Text color */
+cursor: pointer; /* Add a mouse pointer on hover */
+padding: 15px; /* Some padding */
+border-radius: 10px; /* Rounded corners */
+font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+  min-height: 100vh;
+}
+
+/* Content */
+
+.content {
+  padding-left: 120px;
+  color: #c7c7c7c9;
+  user-select: none;
+}
+
+.content h1 {
+ 
+  font-size: clamp(2.5rem, 4vw, 6rem);
+  font-weight: 700;
+  background: -webkit-linear-gradient(0deg, #446, #ff0000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.1;
+  margin-bottom: 36px;
+  padding-left: 10px;
+}
+
+.content p {
+  font-size: clamp(0.9rem, 4vw, 1.2rem);
+  line-height: 1.6;
+  padding-right: 100px;
+}
+
+.btn {
+  background-color:#20c997;
+  background-image:#660FF2;
+  font-size: clamp(0.8rem, 8vw, 0.9rem);
+  font-weight: 600;
+  color: #fff;
+  width: max-content;
+  outline: 0;
+  border: 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  margin-top: 26px;
+  text-align: center;
+  transform: scale(1);
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  pointer-events: auto;
+}
+
+.btn:hover {
+  box-shadow: 0 4px 10px rgba(247, 101, 145, 0.5);
+  transform: scale(0.98);
+}
+
+/* Stacked Cards */
+
+.stack {
+  position: relative;
+}
+
+.card {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 450px;
+  height: 450px;
+  border-radius: 2rem;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25),
+    0 15px 20px 0 rgba(0, 0, 0, 0.125);
+  transition: transform 0.6s;
+  user-select: none;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.card:nth-last-child(n + 5) {
+  --x: calc(-50% + 90px);
+  transform: translate(var(--x), -50%) scale(0.85);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.01);
+}
+
+.card:nth-last-child(4) {
+  --x: calc(-50% + 60px);
+  transform: translate(var(--x), -50%) scale(0.9);
+}
+
+.card:nth-last-child(3) {
+  --x: calc(-50% + 30px);
+  transform: translate(var(--x), -50%) scale(0.95);
+}
+
+.card:nth-last-child(2) {
+  --x: calc(-50%);
+  transform: translate(var(--x), -50%) scale(1);
+}
+
+.card:nth-last-child(1) {
+  --x: calc(-50% - 30px);
+  transform: translate(var(--x), -50%) scale(1.05);
+}
+
+.card:nth-last-child(1) img {
+  box-shadow: 0 1px 5px 5px rgba(255, 193, 111, 0.5);
+}
+
+.swap {
+  animation: swap 1.3s ease-out forwards;
+}
+
+@keyframes swap {
+  30% {
+    transform: translate(calc(var(--x) - 250px), -50%) scale(0.85) rotate(-5deg)
+      rotateY(65deg);
+  }
+  100% {
+    transform: translate(calc(var(--x) - 30px), -50%) scale(0.5);
+    z-index: -1;
+  }
+}
+
+/* Media queries for keyframes */
+
+@media (max-width: 1200px) {
+  @keyframes swap {
+    30% {
+      transform: translate(calc(var(--x) - 200px), -50%) scale(0.85)
+        rotate(-5deg) rotateY(65deg);
+    }
+
+    100% {
+      transform: translate(calc(var(--x) - 30px), -50%) scale(0.5);
+      z-index: -1;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  @keyframes swap {
+    30% {
+      transform: translate(calc(var(--x) - 150px), -50%) scale(0.85)
+        rotate(-5deg) rotateY(65deg);
+    }
+
+    100% {
+      transform: translate(calc(var(--x) - 30px), -50%) scale(0.5);
+      z-index: -1;
+    }
+  }
+}
+
+/* Media queries for other classes */
+
+@media (max-width: 1200px) {
+  .content {
+    padding-left: 80px;
+  }
+
+  .content p {
+    padding-right: 40px;
+  }
+
+  .card {
+    width: 250px;
+    height: 380px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .content {
+    padding-left: 60px;
+  }
+
+  .content p {
+    line-height: 1.5;
+  }
+
+  .card {
+    width: 220px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 990px) {
+  .content p {
+    padding-right: 0;
+  }
+
+  .card {
+    width: 200px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 950px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 3fr;
+    grid-template-areas:
+      "stacked"
+      "content";
+  }
+
+  .content {
+    grid-area: content;
+    text-align: center;
+    padding: 0 90px;
+  }
+
+  .btn {
+    margin-bottom: 30px;
+  }
+
+  .stack {
+    grid-area: stacked;
+  }
+}
+
+@media (max-width: 650px) {
+  main {
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .content {
+    padding: 0 10px;
+  }
+
+  .content h1 {
+    padding-left: 0;
+  }
+
+  .btn {
+    padding: 8px 16px;
+  }
+
+  .card {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+
+
+
+.btn .a:hover{
+
+  background-color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1 {
+    font-family: 'Poppins', sans-serif, 'arial';
+    font-weight: 600;
+    font-size: 72px;
+    color: white;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif, 'arial';
+    font-weight: 400;
+    font-size: 20px;
+    color: #9b9b9b;
+    line-height: 1.5;
+}
+
+/* ///// inputs /////*/
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+    font-size: 0.75em;
+    color: #999;
+    top: -5px;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
+}
+
+.styled-input {
+    float: left;
+    width: 293px;
+    margin: 1rem 0;
+    position: relative;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px){
+    .styled-input {
+        width:100%;
+    }
+}
+
+.styled-input label {
+    color: #999;
+    padding: 1.3rem 30px 1rem 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+
+.styled-input.wide { 
+    width: 650px;
+    max-width: 100%;
+}
+
+input,
+textarea {
+    padding: 30px;
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #2d2d2d;
+    color: white;
+    border-radius: 4px;
+}
+
+input:focus,
+textarea:focus { outline: 0; }
+
+input:focus ~ span,
+textarea:focus ~ span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+}
+
+textarea {
+    width: 100%;
+    min-height: 15em;
+}
+
+.input-container7 {
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto 25px auto;
+}
+
+.submit-btn {
+    float: right;
+    padding: 7px 35px;
+    border-radius: 60px;
+    display: inline-block;
+    background-color: #4b8cfb;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06),
+              0 2px 10px 0 rgba(0,0,0,0.07);
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(1px);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
+              0 1px 1px 0 rgba(0,0,0,0.09);
+}
+
+@media (max-width: 768px) {
+    .submit-btn {
+        width:100%;
+        float: none;
+        text-align:center;
+    }
+}
+
+input[type=checkbox] + label {
+  color: #ccc;
+  font-style: italic;
+} 
+
+input[type=checkbox]:checked + label {
+  color: #f00;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes slide
+        {
+             0%{left:0%;}
+            9%{left:0%;}
+            18%{left:-100%;}
+            27%{left:-100%;}
+            36%{left:-200%;}
+            45%{left:-200%;}
+            54%{left:-300%;}
+            63%{left:-300%;}
+        }
+
+        #slider 
+        {
+            overflow: hidden;
+        }
+
+       #slider figure
+        {
+            position:relative;
+            width:600%;
+            margin:0px;
+            left:0px;
+            text-align:left;
+            animation: 30s slide infinite;
+        }
+
+        #slider figure img
+        {
+            float:left;
+            width:16.6666%;
+          
+            height:500px;   
+        }
+       
+  </style>
+
+<script type="text/javascript">var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+</script>
+
+
+
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a class="logo" style="font-size: 20px;"><img src="c008a6dd-6ac7-49c0-9554-c33ef7deacab-removebg-preview.png" style="height: 70px; width: 80px;"></a>
+        </div><div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">PACKAGE</a></li>
+        <li><a href="#tour">TOUR</a></li>
+        <li><a href="#package">ABOUT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#contact"></a></li>
+        
+      </ul></div></div>
+
+    </nav>
+
+
+<div id="slider">
+  <figure id="slidy">
+         
+            <img src="chiranjit_pic/rajasthan/hawa-mahal-jaipur3.jpg"  />
+            <img src="chiranjit_pic/dubai/thumb-1920-1087214.jpg" />
+            <img src="chiranjit_pic/thailand/rock-4682897_1280.jpg" />
+            <img src="chiranjit_pic/vietnam/Best-time-to-visit-Da-Nang-Vietnamnomad-1068x668.jpg" />
+        </figure>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="section__container destination__container" id="about">
+      <h2 class="section__header">2025 Our Tour Destination</h2>
+      <p class="section__description">
+        Discover the Most Loved Destinations Around the Globe
+      </p>
+
+      <div class="destination__grid">
+        <div class="destination__card">
+          <img src="chiranjit_pic/dubai/thumb-1920-1087214.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>DUBAI (6 DAYS)</h4>
+              <p>BUR DUBAI, COVERING ABU DHABI</p>
+            </div>   
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.7
+            </div>
+          </div> <a href="dubai.html"><button class="btn" style="background-color:#8134fbbf">Explore More</button></a>
+        </div>
+        <div class="destination__card">
+          <img src="chiranjit_pic/thailand/rock-4682897_1280.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>THAILAND (6 DAYS)</h4>
+              <p>BANGKOK, PATTAYA</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.5
+            </div>
+          </div><a href="thailand.html"><button class="btn" style="background-color:#8134fbbf">Explore More</button></a>
+        </div>
+        <div class="destination__card">
+          <img src="chiranjit_pic/vietnam/Best-time-to-visit-Da-Nang-Vietnamnomad-1068x668.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>VIETNAM (9 DAYS)</h4>
+              <p>HO CHI MIN, DANANG, HANOI, HA LONG BAY</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.8
+            </div>
+          </div><a href="vietnam.html"><button class="btn" style="background-color:#8134fbbf">Explore More</button></a>
+        </div>
+         <div class="destination__card">
+          <img src="chiranjit_pic/london/tower-2223305_1280.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>LONDON WITH EUROPE(17 DAYS)</h4>
+              <p>LONDON, NETHERLAND, FRANCE, BELGIUM, GERMARY, SWITZERLAND, AZESTRIA, PADOVA ITALY, ROME, VATICAN CITY </p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.8
+            </div>
+          </div><a href="london.html"><button class="btn" style="background-color:#8134fbbf">Explore More</button></a>
+        </div>
+     
+
+   
+        <div class="destination__card">
+          <img src="chiranjit_pic/rajasthan/hawa-mahal-jaipur3.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>RAJASTHAN (14 DAYS)</h4>
+              <p>JODHPUR, DESSORT, JAISALMIR, MOUNT-ABU, UDAIPUR, CHITORGARH, JAIPUR</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.7
+            </div>
+          </div><a href="rajasthan.html"><button class="btn" style="background-color:#8134fbbf">Explore More</button></a>
+        </div>
+        <div class="destination__card">
+          <img src="chiranjit_pic/kerala/kerala.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>KERALA (14 DAYS)</h4>
+              <p>ERNAKULAM, MUNNAR, POOIER, ALLIPPY</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.5
+            </div>
+          </div><a href="kerala.html"><button class="btn" style="background-color:#8134fbbf">Explore More</button></a>
+        </div>
+        <div class="destination__card">
+          <img src="chiranjit_pic/himachal/himalayas-2808132_640.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>HIMACHAL (13 DAYS)</h4>
+              <p>SIMLA, MANALI, DHARMASALA, KHAJIAR, AMRITSAR</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.8
+            </div>
+          </div><a href="himachal.html"><button class="btn" style="background-color:#8134fbbf">Explore More</button></a>
+        </div>
+      
+
+        <div class="destination__card">
+          <img src="chiranjit_pic/haridwar/bffc56b4-e452-47d6-a87f-c518c7a1d9eb.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>HARIDWAR (13 DAYS)</h4>
+              <p>BANARAS, HARIDWAR, HRISHIKESH, AGRA, MATHURA, VRINDABAN</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.7
+            </div>
+          </div><a href="haridwar.html"><button class="btn" style="background-color:#8134fbbf">Explore More</button></a>
+        </div>
+         <div class="destination__card">
+          <img src="chiranjit_pic/arunachal/395e4a9b-8c38-4e18-a18b-1293b1a230b9.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>ARUNACHAL (7 DAYS)</h4>
+              <p>BHALUKPONG, DHIRANG, TAWANG, BOMDILA</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.7
+            </div>
+          </div><a href="arunachal.html"><button class="btn" style="background-color:#8134fbbf">Explore More</button></a>
+       </div>
+        <div class="destination__card">
+          <img src="chiranjit_pic/andaman/island-4053295_1280.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>ANDAMAN ISLAND (6 DAYS)</h4>
+              <p>PORT BLAIR, HAVELOCK ISLAND, NELI ISLAND</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.7
+            </div>
+          </div><a href="andaman.html"><button class="btn" style="background-color:#8134fbbf">Explore More</button></a>
+        </div>
+         <div class="destination__card">
+          <img src="chiranjit_pic/gujrat/somnath.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>GUJRAT (13 DAYS)</h4>
+              <p>DWARKA, SOMNATH, DIU, AHMEDABAD</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.7
+            </div>
+          </div><a href="gujrat.html"><button class="btn" style="background-color:#8134fbbf">Explore More</button></a>
+        </div>
+         <div class="destination__card">
+          <img src="chiranjit_pic/kashmir/0df759de-6f3e-4c9f-9eb1-47b5ea30563c.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>KASHMIR (13 DAYS)</h4>
+              <p>KATRA, SRINAGAR, PAHALGAM, PATNITOP</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.7
+            </div>
+          </div><a href="kashmir.html"><button class="btn" style="background-color:#8134fbbf">Explore More</button></a>
+        </div>
+
+         <div class="destination__card">
+          <img src="chiranjit_pic/nepal/nepal-394_1280.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>NEPAL (8 DAYS)</h4>
+              <p>KATHMANDU, CHITWAN, POKHRA</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.7
+            </div>
+          </div><a href="nepal.html"><button class="btn" style="background-color:#8134fbbf">Explore More</button></a>
+        </div>
+
+         <div class="destination__card">
+          <img src="chiranjit_pic/bhutan/wp4190440.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>BHUTAN (6 DAYS)</h4>
+              <p>THIMPU, PARO, PHULSHILING</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.7
+            </div>
+          </div><a href="bhutan.html"><button class="btn" style="background-color:#8134fbbf">Explore More</button></a>
+        </div>
+
+         <div class="destination__card">
+          <img src="chiranjit_pic/mumbai/OIP(1).jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>MUMBAI (6 DAYS)</h4>
+              <p>GOA, MUMBAI</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.7
+            </div>
+          </div><a href="mumbai.html"><button class="btn" style="background-color:#8134fbbf">Explore More</button></a>
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="header__btns" id="tour">
+
+
+
+
+
+<div class="content" >
+        <h1>OUR PREVIOUS TOUR</h1>
+
+
+    <main style="background-color:  margin-top: 50px;">
+   
+      <div class="stack">
+        <div class="card">
+          <img
+            src="chiranjit_pic/arunachal/395e4a9b-8c38-4e18-a18b-1293b1a230b9.jpg"
+            alt="" />
+        </div>
+        <div class="card">
+          <img
+            src="assets/ganga-ghat-haridwar1-attr-hero.jpg"
+            alt="" />
+        </div>
+        <div class="card">
+          <img
+            src="assets/2-mehrangarh-fort-jodhpur-rajasthan-city-hero.jpg"
+            alt="" />
+        </div>
+        <div class="card">
+          <img
+            src="assets/cultural-tourism-5264542_640.jpg"
+            alt="" />
+        </div>
+
+   <div class="card">
+          <img
+            src="chiranjit_pic/kashmir/03473546-cbde-46ba-bad3-22171bdff5b9.jpg"
+            alt="" />
+        </div>
+      </div>
+         <div class="content" >
+       
+        <p style="color:#000">Our previous tour was a well-organized and memorable experience.
+
+We explored beautiful destinations with comfortable travel arrangements.
+
+The accommodation provided was clean, safe, and conveniently located.
+
+The tour guide was knowledgeable, friendly, and always ready to assist.
+
+All sightseeing spots were covered as promised in the itinerary.
+
+We enjoyed delicious local cuisine and cultural activities throughout the trip.
+
+Transportation was punctual and well-maintained, ensuring a smooth journey.
+
+The agency staff remained in constant touch, offering excellent support.
+
+
+Overall, it was a delightful tour experience that we would love to repeat.
+
+
+        </p>
+        <a href="#about"><button class="btn" style="background-color:#8134fbbf">Explore More</button></a>
+      </div>
+
+    </main>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 style="text-align: center;"class="section__header">ABOUT US</h2>
+
+
+
+    <section class="section__container showcase__container" id="package">
+
+      <div class="showcase__image">
+        <img style="height:500px" src="chiranjit_pic/andaman/father-656734_1280.jpg" alt="showcase" />
+      </div>
+      <div class="showcase__content">
+
+        <h4>UNLEASH WANDERLUST WITH DIGDARSHAN</h4>
+        <p>
+          Embark on a journey like no other with DIGDARSHAN, where your travel
+          dreams come to life. Our mission is to inspire and facilitate your
+          adventures, whether you seek the vibrant energy of bustling
+          cityscapes, the serene beauty of pristine beaches, or the captivating
+          history of ancient landmarks. At DIGDARSHAN, we provide expertly curated
+          destinations and personalized itineraries, ensuring that every trip is
+          tailored to your unique preferences. Discover hidden gems, immerse
+          yourself in diverse cultures, and create unforgettable memories that
+          will last a lifetime.
+        </p>
+        <p>
+          With DIGDARSHAN as your ultimate travel companion, exploring the wonders
+          of the world has never been easier. Our insider tips and local
+          insights give you the tools to navigate new places with confidence and
+          excitement. From the moment you start planning to the day you return
+          home, we are dedicated to making your travel experience seamless and
+          enriching.
+        </p>
+        <div class="showcase__btn"><a href="#contact" style="color: #fff;">
+          <button class="btn" style="color:#fff">
+            Book A Trip Now
+            <span><i class="ri-arrow-right-line"></i></span>
+          </button></a>
+        </div>
+      </div>
+    </section>
+
+
+
+<h2 style="text-align: center;"class="section__header">OUR SERVICE</h2>
+    <div class="rts-about-fun-facts rts-section-gap bg_about-f ">
+
+
+
+        <div class="container showcase__btn">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about-fun-facts-wrapper ">
+                        <!-- single -fun facts area start -->
+                        <div class="single-funfacts-about">
+                            <div class="top ">
+                                <div class="icon">
+                                    <img src="icon/06.svg" alt="fun-facts" style="width: 50px;">
+                                </div>
+                                <h2 class="title plus"><span class="counter">25</span></h2>
+                            </div>
+                            <p class="disc">
+                                Years of Experience DIGDARSHAN. Our expert team plans and executes your entire trip hassle-free.
+                            </p>
+                        </div>
+                        <!-- single -fun facts area end -->
+                        <!-- single -fun facts area start -->
+                        <div class="single-funfacts-about">
+                            <div class="top">
+                                <div class="icon">
+                                    <img src="icon/08.svg" alt="fun-facts"style="width: 50px;">
+                                </div>
+                                <h2 class="title plus"><span class="counter">80</span></h2>
+                            </div>
+                            <p class="disc">
+                                We provide customized domestic and international tour packages.We offer flight, train, and bus ticket booking facilities.
+                            </p>
+                        </div>
+                        <!-- single -fun facts area end -->
+                        <!-- single -fun facts area start -->
+                        <div class="single-funfacts-about">
+                            <div class="top">
+                                <div class="icon">
+                                    <img src="icon/09.svg" alt="fun-facts"style="width: 50px;">
+                                </div>
+                                <h2 class="title plus"><span class="counter">100</span></h2>
+                            </div>
+                            <p class="disc">
+                                24/7 customer support is available during your travel. Car rentals and local transport arrangements are provided.
+                            </p>
+                        </div>
+                        <!-- single -fun facts area end -->
+                        <!-- single -fun facts area start -->
+                        <div class="single-funfacts-about">
+                            <div class="top">
+                                <div class="icon">
+                                    <img src="icon/07.svg" alt="fun-facts"style="width: 50px;">
+                                </div>
+                                <h2 class="title plus"><span class="counter">38</span></h2>
+                            </div>
+                            <p class="disc">
+                                Countries, We Worked. DIGDARSHAN design draws together the many standers of place-making
+                            </p>
+                        </div>
+                        <!-- single -fun facts area end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <section class="section__container client__container">
+      <h2 class="section__header">OUR CLIENT SAYS</h2>
+      <p class="section__description">
+        Discover the stories of wanderlust and cherished memories through the
+        eyes of our valued clients.
+      </p>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  Digdarshan has completely transformed my travel experience. From
+                  finding hidden gems in bustling cities to discovering serene
+                  retreats off the beaten path, every detail was thoughtfully
+                  arranged. I can't recommend Digdarshan enough for anyone looking
+                  to elevate their travel experience!
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="assets/client-1.jpg" alt="client" />
+                <div>
+                  <h4>Rehan Gupta</h4>
+                  <h5>Travel Blogger</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  My recent adventure with Digdarshan was nothing short of
+                  spectacular. The personalized itineraries and recommendations
+                  they provided led me to extraordinary locations that I would
+                  never have found on my own. I'm already planning my next
+                  adventure with them!
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="assets/client-2.jpg" alt="client" />
+                <div>
+                  <h4>Srija Roy</h4>
+                  <h5>Adventure Enthusiast</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  Digdarshan offered a transformative experience for my research
+                  into historical landmarks. The unique aerial perspectives and
+                  provided a new level of appreciation and insight into the
+                  sites I studied. I highly recommend their services to fellow
+                  historians and cultural enthusiasts.
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="assets/client-3.jpg" alt="client" />
+                <div>
+                  <h4>Rekha Malhotra</h4>
+                  <h5>Cultural Historian</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  Finding a balance between work and travel can be challenging,
+                  but Digdarshan made it effortless. Their efficient planning and
+                  excellent recommendations helped me maximize my downtime and
+                  enjoy every moment of my trip. I look forward to working with
+                  them again on future travels.
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="assets/client-4.jpg" alt="client" />
+                <div>
+                  <h4>David Patel</h4>
+                  <h5>Business Executive</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+        <!-- video section -->
+        <section id = "video">
+            <div class = "video-wrapper flex">
+                <video loop>
+                    <source src = "videos/video-section.mp4" type = "video/mp4">
+                </video>
+                <button type = "button" id = "play-btn">
+                    
+              <span><i class="ri-play-circle-fill" ></i></span>
+            
+                </button>
+            </div>
+        </section>
+        <!-- end of video section -->
+
+
+
+
+
+
+
+
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- contact section -->
+        <section id = "contact" class = "py-4">
+           
+
+                <div class = "title-wrap">
+                    <span class = "sm-title">get in touch with us</span>
+                    <h2 class = "lg-title">contact us</h2>
+                </div>
+
+<div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+       
+              <div class = "contact-left">
+                        <form class = "contact-form" name="" method="post" action="sendmail.php" enctype="multipart/form-data" autocomplete="off">
+                            <input type = "text" class = "form-control" placeholder="Your Name" name="name">
+                            <input type = "Number" class = "form-control" placeholder="Your Phone Number" name="mobile">
+                            <input type = "email" class = "form-control" placeholder="Your Email Id Optional" name="email">
+                            <select name="place" class = "form-control">
+
+                  <option value="">Select Place*</option>
+                  <option value="DUBAI">DUBAI</option>
+                  <option value="THAILAND">THAILAND</option>
+
+                  <option value="VIETNAM">VIETNAM</option>
+
+                  <option value="LONDON WITH EUROPE">LONDON WITH EUROPE</option>
+
+                  <option value="RAJASTHAN">RAJASTHAN</option>
+
+                  <option value="KERALA">KERALA</option>
+
+                  <option value="HIMACHAL">HIMACHAL</option>
+                  <option value="HARIDWAR">HARIDWAR</option>
+                  <option value="ARUNACHAL">ARUNACHAL</option>
+                  <option value="ANDAMAN ISLAND">ANDAMAN ISLAND</option>
+                  <option value="GUJRAT">GUJRAT</option>
+                  <option value="KASHMIR">KASHMIR</option>
+                  <option value="NEPAL">NEPAL</option>
+                 
+                  
+                                                      
+
+
+                </select>
+                            <textarea rows = "4" class = "form-control" placeholder="Your Message" style = "resize: none;" name="message"></textarea>
+                            <input type = "submit" class = "btn" value = "Send message">
+                        </form>
+                    </div>
+          </div>
+
+          <div class="col-md-6 col-sm-12">
+             <div class = "contact-right my-2">
+                        <div class = "contact-item">
+                            <span class = "contact-icon flex">
+                                <i class = "fa fa-phone-alt"></i>
+                            </span>
+                            <div>
+                                <span>Phone</span>
+                                <p class = "text" style="color:#000000">+91 9434103834<br>+91 8372095133<br>+91 7001179067</p>
+                            </div>
+                        </div>
+                        <div class = "contact-item">
+                            <span class = "contact-icon flex">
+                                <i class = "fa fa-map-marked-alt"></i>
+                            </span>
+                            <div>
+                                <span>Address</span>
+                                <p class = "text" style="color:#000000">New Town Madhab More, Alipurduar</p>
+                            </div>
+                        </div>
+                        <div class = "contact-item">
+                            <span class = "contact-icon flex">
+                                <i class = "fa fa-envelope"></i>
+                            </span>
+                            <div>
+                                <span>E-mail</span>
+                                <p class = "text" style="color:#000000">digdarshan.app@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+          </div>
+
+
+</div></div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <section class="google-map google-map-two">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3570.768406374622!2d89.52453197466679!3d26.495400676898406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e25715dde3f289%3A0x7c2620e47648df1!2sDigdarshan%20Tours%20%26%20Travels%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1749924032278!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+
+
+   
+
+
+ <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-3">
+            <h6>DIGDARSHAN</h6>
+            <p class="text">    Explore the world with ease and excitement through our comprehensive
+            travel platform. Your journey begins here, where seamless planning
+            meets unforgettable experiences.Customized holiday packages to suit every budget.Explore the world with us – your trusted travel partner.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="index.html#home" style="color: #fff;">HOME</a></li>
+        <li><a href="index.html#about" style="color: #fff;">PACKAGE</a></li>
+        <li><a href="index.html#tour" style="color: #fff;">TOUR</a></li>
+        <li><a href="index.html#package" style="color: #fff;">ABOUT</a></li>
+        <li><a href="index.html#contact" style="color: #fff;">CONTACT</a></li>
+        
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="dubai.html"style="color:#ffffff">DUBAI</a></li>
+              <li><a href="thailand.html"style="color:#ffffff">THAILAND</a></li>
+              <li><a href="vietnam.html"style="color:#ffffff">VIETNAM</a></li>
+        
+             <li><a href="london.html"style="color:#ffffff">LONDON</a></li>
+              <li><a href="rajasthan.html"style="color:#ffffff"> RAJASTHAN</a></li>
+              <li><a href="kerala.html"style="color:#ffffff"> KERALA</a></li>
+              <li><a href="himachal.html"style="color:#ffffff"> HIMACHAL</a></li>
+              <li><a href="haridwar.html"style="color:#ffffff"> HARIDWAR</a></li>
+              <li><a href="arunachal.html"style="color:#ffffff"> ARUNACHAL</a></li>
+              <li><a href="andaman.html"style="color:#ffffff"> ANDAMAN</a></li>
+              <li><a href="gujrat.html"style="color:#ffffff">  GUJRAT</a></li>
+              <li><a href="kashmir.html"style="color:#ffffff">KASHMIR</a></li>
+              <li><a href="nepal.html"style="color:#ffffff">NEPAL</a></li>
+            <li><a href="bhutan.html"style="color:#ffffff"> BHUTAN</a></li>
+                <li><a href="mumbai.html"style="color:#ffffff"> MUMBAI</a></li>
+            </ul>
+
+          </div>
+
+
+
+          <div class="col-xl-6 col-md-3">
+            <h6>Contacts Us </h6>
+            <div class = "contact-right my-2">
+                        <div class = "contact-item">
+                            <span class = "contact-icon flex">
+                                <i class = "fa fa-phone-alt"></i>
+                            </span>
+                              
+                                <span style="color:#fff">Phone:</span>
+                                <p class = "text" style="color:#ffffff">+91 9434103834<br>+91 8372095133<br>+91 7001179067</p>
+                            </div>
+                        
+                        <div class = "contact-item">
+                            <span class = "contact-icon flex">
+                                <i class = "fa fa-map-marked-alt"></i>
+                            </span>
+                            <div>
+                                <span style="color:#fff">Address:</span>
+                                <p class = "text" style="color:#ffffff">New Town Madhab More, Alipurduar</p>
+                            </div>
+                        </div>
+                        <div class = "contact-item">
+                            <span class = "contact-icon flex">
+                                <i class = "fa fa-envelope"></i>
+                            </span>
+                            <div>
+                                <span style="color:#fff">E-mail: 
+                                <p class = "text" style="color:#ffffff">digdarshan.app@gmail.com</p></span>
+                            </div>
+                        </div>
+                    </div>
+
+          </div>
+           <ul class="footer__socials">
+            <li>
+              <a href="https://www.facebook.com/people/Digdarshan-Tour/61557550703531/?rdid=iFYy15F3NTBdDSi1&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1EtRTPSWwE%2F" style="color: #fff;"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/digdarshan_tourandtravels?igsh=Mm9qZDF6NHZ1d2Q4"style="color: #fff;"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="#"style="color: #fff;"><i class="ri-youtube-line"></i></a>
+            </li>
+          </ul>
+        </div>
+        <hr>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2025 All Rights Reserved by 
+         <a href="#">Digdarshan</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+           
+
+ 
+
+          </div>
+        </div>
+      </div>
+</footer>
+
+
+
+
+
+
+
+
+
+      <!--==================================================-->
+  <!--start fTo Top-->
+  <!--===================================================-->
+ 
+
+
+  <!-- jquery scrollup js -->
+  
+  <!-- Jquery UI Tab JS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+
+        <!-- js -->
+        <script src = "js/script.js"></script>
+
+      <script>// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+mybutton.style.display = "block";
+} else {
+mybutton.style.display = "none";
+}
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+document.body.scrollTop = 0; // For Safari
+document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+}</script>
+
+ <script src="js/main.js"></script>
+
+
+
+    <script>
+
+
+jQuery(document).ready(function($) {
+            "use strict";
+            //  TESTIMONIALS CAROUSEL HOOK
+            $('#customers-testimonials').owlCarousel({
+                loop: true,
+                center: true,
+                items: 3,
+                margin: 0,
+                autoplay: true,
+                dots:true,
+                autoplayTimeout: 8500,
+                smartSpeed: 450,
+                responsive: {
+                  0: {
+                    items: 1
+                  },
+                  768: {
+                    items: 2
+                  },
+                  1170: {
+                    items: 3
+                  }
+                }
+            });
+          });
+        </script>
+        <script>
+
+  var galleryThumbs = new Swiper('.gallery-thumbs', {
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: '2',
+  // coverflowEffect: {
+  //   rotate: 50,
+  //   stretch: 0,
+  //   depth: 100,
+  //   modifier: 1,
+  //   slideShadows : true,
+  // },
+  
+  coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 50,
+        modifier: 6,
+        slideShadows : false,
+    },
+    
+  });
+  
+  
+var galleryTop = new Swiper('.swiper-container.testimonial', {
+  speed: 400,
+  spaceBetween: 50,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  direction: 'vertical',
+  pagination: {
+    clickable: true,
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+  thumbs: {
+    swiper: galleryThumbs
+    }
+  });
+  
+        </script>
+
+        <script src="https://md-aqil.github.io/images/swiper.min.js"></script>
+
+              <script>
+
+const stack = document.querySelector(".stack");
+const cards = Array.from(stack.children)
+  .reverse()
+  .filter((child) => child.classList.contains("card"));
+
+cards.forEach((card) => stack.appendChild(card));
+
+function moveCard() {
+  const lastCard = stack.lastElementChild;
+  if (lastCard.classList.contains("card")) {
+    lastCard.classList.add("swap");
+
+    setTimeout(() => {
+      lastCard.classList.remove("swap");
+      stack.insertBefore(lastCard, stack.firstElementChild);
+    }, 1200);
+  }
+}
+
+let autoplayInterval = setInterval(moveCard, 4000);
+
+stack.addEventListener("click", function (e) {
+  const card = e.target.closest(".card");
+  if (card && card === stack.lastElementChild) {
+    card.classList.add("swap");
+
+    setTimeout(() => {
+      card.classList.remove("swap");
+      stack.insertBefore(card, stack.firstElementChild);
+    }, 1200);
+  }
+});
+
+        </script>
+
+             <script>
+            // play/pause video
+            let video = document.querySelector('.video-wrapper video');
+            document.getElementById('play-btn').addEventListener('click', () => {
+                if(video.paused){
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        </script>
+        <script>
+          
+
+          //material contact form animation
+$('.contact-form').find('.form-control').each(function() {
+  var targetItem = $(this).parent();
+  if ($(this).val()) {
+    $(targetItem).find('label').css({
+      'top': '10px',
+      'fontSize': '14px'
+    });
+  }
+})
+$('.contact-form').find('.form-control').focus(function() {
+  $(this).parent('.input-block').addClass('focus');
+  $(this).parent().find('label').animate({
+    'top': '10px',
+    'fontSize': '14px'
+  }, 300);
+})
+$('.contact-form').find('.form-control').blur(function() {
+  if ($(this).val().length == 0) {
+    $(this).parent('.input-block').removeClass('focus');
+    $(this).parent().find('label').animate({
+      'top': '25px',
+      'fontSize': '18px'
+    }, 300);
+  }
+})
+        </script>
+
+
+
+
+
+  </body>
+</html>
